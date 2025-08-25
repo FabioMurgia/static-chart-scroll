@@ -34,14 +34,15 @@ figure p {
   transform: translate(-50%, -50%);
   font-size: 8rem;
   font-weight: 900;
-  color: olivedrab;
+  color: blue;
 }
 
 .step {
   /* background-color: #3b3b3b;
   color: #fff; */
   display: flex;
-  justify-content: center;
+  justify-content: left;
+  padding-left: 1.5rem;
   align-items: center;
 }
 
@@ -55,7 +56,6 @@ figure p {
 } */
 
 .step p {
-  text-align: center;
   padding: 1rem;
   font-size: 1.5rem;
 }
