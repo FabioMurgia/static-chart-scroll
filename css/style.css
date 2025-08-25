@@ -1,33 +1,25 @@
 #scrolly {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  background-color: #f3f3f3;
-  padding: 1rem;
 }
 
 #scrolly > * {
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
   flex: 1;
 }
 
 article {
   position: relative;
-  padding: 0 1rem;
-  max-width: 20rem;
+  max-width: 37%;
+  background-color: rgb(238, 238, 238);
 }
 
 figure {
-  position: -webkit-sticky;
   position: sticky;
   width: 100%;
   margin: 0;
   -webkit-transform: translate3d(0, 0, 0);
   -moz-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
-  background-color: #8a8a8a;
   z-index: 0;
 }
 
@@ -42,26 +34,32 @@ figure p {
   transform: translate(-50%, -50%);
   font-size: 8rem;
   font-weight: 900;
-  color: #fff;
+  color: olivedrab;
 }
 
 .step {
-  margin: 0 auto 2rem auto;
-  background-color: #3b3b3b;
-  color: #fff;
+  /* background-color: #3b3b3b;
+  color: #fff; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .step:last-child {
   margin-bottom: 0;
 }
 
-.step.is-active {
+/* .step.is-active {
   background-color: goldenrod;
   color: #3b3b3b;
-}
+} */
 
 .step p {
   text-align: center;
   padding: 1rem;
   font-size: 1.5rem;
+}
+
+.paragraph {
+  height: 50vh;
 }
