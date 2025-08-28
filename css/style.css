@@ -13,17 +13,19 @@ article {
   background-color: rgb(238, 238, 238);
 }
 
-figure, img {
+figure,
+img {
   position: sticky;
   object-fit: cover;
-  margin-top: 20vh;
   z-index: 0;
   transition: opacity 0.5s ease;
 }
 
 img {
   position: absolute;
+  top: 50%;
   width: 100%;
+  transform: translate(0%, -50%);
 }
 
 figure p {
@@ -58,8 +60,4 @@ figure p {
 
 .paragraph {
   height: 50vh;
-}
-
-.text {
-  display: block;
 }
