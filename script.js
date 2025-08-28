@@ -26,17 +26,20 @@ function handleResize() {
 }
 
 // scrollama event handlers
-function handleStepEnter(response) {
-  console.log(response);
-  // response = { element, direction, index }
+let current = 0; // index of the visible image
+const images = d3.selectAll("figure img").nodes();
 
-  // add color to current step only
-  step.classed("is-active", function (d, i) {
-    return i === response.index;
+function handleStepEnter(response) {
+  // highlight step
+  step.classed("is-active", (d, i) => i === response.index);
+
+  const next = response.index; // index of the new image
+
+  images.forEach((img, i) => {
+    img.style.opacity = i === next ? 1 : 0;
   });
 
-  // update graphic based on step
-  figure.select("p").text(response.index + 1);
+  current = next;
 }
 
 function init() {
